@@ -1,0 +1,10 @@
+name: 'Composer'
+description: 'Run Composer commands, such as composer install'
+author: 'Flownative'
+inputs: []
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'package'
+  color: 'blue'

@@ -1,6 +1,11 @@
 name: 'Composer'
 description: 'Run Composer commands, such as composer install'
 author: 'Flownative'
+inputs:
+  auth_json:
+    description: 'A JSON object containing one or more HTTP Basic credentials for accessing private repositories'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'

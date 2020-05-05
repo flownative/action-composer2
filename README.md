@@ -1,7 +1,9 @@
 # Composer Github Action
 
-This Github action allows you to run [Composer](https://getcomposer.org/) in your Github workflows. Note that Git tags
-must start with a "v" prefix, for example "v1.23.4-5".
+This Github action allows you to run
+[Composer](https://getcomposer.org/) install in your Github workflows.
+Note that Git tags must start with a "v" prefix, for example
+"v1.23.4-5".
 
 ## Example workflow
 
@@ -29,3 +31,15 @@ jobs:
           tag_ref: ${{ github.ref }}
 –
 ````
+
+The actual command executed by this action looks like this:
+
+```
+composer \ 
+  --no-dev \
+  --no-progress \
+  --optimize-autoloader \
+  --ignore-platform-reqs \ 
+  --verbose \ 
+  install
+```

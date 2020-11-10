@@ -1,4 +1,4 @@
-FROM flownative/composer:7.4
+FROM flownative/composer2:7.4
 
 # Github Actions only support running as "root", otherwise the action
 # does not have access to the `GITHUB_WORKSPACE`.

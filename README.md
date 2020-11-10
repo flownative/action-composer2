@@ -1,7 +1,7 @@
 # Composer Github Action
 
 This Github action allows you to run
-[Composer](https://getcomposer.org/) install in your Github workflows.
+[Composer 2](https://getcomposer.org/) install in your Github workflows.
 Note that Git tags must start with a "v" prefix, for example
 "v1.23.4-5".
 
@@ -26,7 +26,7 @@ jobs:
           fetch-depth: 1
 
       - name: Install Composer dependencies
-        uses: flownative/action-composer@master
+        uses: flownative/action-composer2@master
         with:
           tag_ref: ${{ github.ref }}
 –

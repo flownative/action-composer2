@@ -1,5 +1,5 @@
-name: 'Composer'
-description: 'Run Composer commands, such as composer install'
+name: 'Composer 2'
+description: 'Run Composer 2 commands, such as composer install'
 author: 'Flownative'
 inputs:
   auth_json:
